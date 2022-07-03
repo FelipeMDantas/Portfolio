@@ -9,15 +9,20 @@ const Skills = () => {
   const [experience, setExperience] = useState([]);
   const [skills, setSkills] = useState([]);
 
+  function removeGit(datum) {
+    return datum.name != "Git";
+  }
+
   useEffect(() => {
     const query = '*[_type == "experiences"]';
-    const skillsQuery = '*[_type == "skills"] | order(_updatedAt desc)';
+    const skillsQuery = '*[_type == "skills"] | order(_updatedAt)';
 
     client.fetch(query).then((data) => {
       setExperience(data);
     });
 
     client.fetch(skillsQuery).then((data) => {
+      data = data.filter(removeGit);
       setSkills(data);
     });
   }, []);
