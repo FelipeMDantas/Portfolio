@@ -14,7 +14,7 @@
 
 ### Take a look at the page
 
-felipemdantas.netlify.app
+[felipemdantas.netlify.app]
 
 ## Tech
 
@@ -29,6 +29,7 @@ A couple of technologies were employed in this project. Among them:
 - [React Icons] - a dependecy that helps to include popular icons in React projects
 - [Prettier] - a code formatter
 
+  [felipemdantas.netlify.app]: https://felipemdantas.netlify.app/
   [reactjs]: https://reactjs.org/
   [npm]: https://www.npmjs.com/
   [sass]: https://sass-lang.com/
